@@ -6,6 +6,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import streamlit as st
 from PIL import Image
+import plotly.express as px
 from streamlit import session_state as session
 
 
