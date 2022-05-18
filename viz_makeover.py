@@ -32,7 +32,7 @@ def get_plot(res_df):
     for i, id in enumerate(tr_line):
         fig.data[id].update(line_width=3, line_dash="longdashdot", line_color=cols[i])
 
-    fig.update_layout(title_x=0.47, title_y=0.91, margin_r=0, margin_l=0)
+    fig.update_layout(title_x=0.47, title_y=0.91, margin_r=0, margin_l=0, font_size=15)
     return fig
 
 plot = get_plot(df)
