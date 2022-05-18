@@ -39,10 +39,8 @@ plot = get_plot(df)
 st.write(plot)
 st.subheader("Observations")
 obs = """
-* Ratio of **Closed** (blue points) to **Pending** (red points) complaints was almost 1:1 from Jan 2010 - Jun 2010. And greatly improved thereafter, 
-hence showing DSNY's promptness to address rodent infestations
-* Most rodent complaints pre-2013 were **directly put into a Pending status and then Closed**. Post 2013, it seems, 
-most complaints were Assigned --> Pending --> Closed. Is Assigned status a **"proxy placebo"**?
+* Ratio of **Closed** (blue points) to **Pending** (red points) complaints was almost 1:1 from Jan 2010 - Jun 2010. And greatly improved thereafter, hence showing DSNY's promptness to address rodent infestations
+* Most rodent complaints pre-2013 were **directly put into a Pending status and then Closed**. Post 2013, it seems, most complaints were Assigned --> Pending --> Closed. Is Assigned status a **"proxy placebo"**?
 """
 st.markdown(obs)
 img = Image.open("rats_pic.png")
