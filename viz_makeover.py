@@ -12,7 +12,7 @@ from streamlit import session_state as session
 
 df = pd.read_csv("viz_comp.csv", sep="\t")
 st.set_page_config(layout="wide")
-st.title("Viz Makeover")
+st.title("Shuks Viz Makeover")
 
 def get_plot(res_df):
     res_df['day'] = pd.to_datetime(res_df['day'])
@@ -40,7 +40,8 @@ st.write(plot)
 st.subheader("Observations")
 obs = """
 * Ratio of **Closed** (blue points) to **Pending** (red points) complaints was almost 1:1 from Jan 2010 - Jun 2010. And greatly improved thereafter, hence showing DSNY's promptness to address rodent infestations
-* Most rodent complaints pre-2013 were **directly put into a Pending status and then Closed**. Post 2013, it seems, most complaints were Assigned --> Pending --> Closed. Is Assigned status a **"proxy placebo"**?
+* Most rodent complaints pre-2013 were **directly put into a Pending status and then Closed**. Post 2013, it seems, most complaints were **Assigned --> Pending --> Closed** 
+* **Is Assigned status a "proxy placebo"**?
 """
 st.markdown(obs)
 img = Image.open("rats_pic.png")
