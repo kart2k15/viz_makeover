@@ -16,7 +16,7 @@ st.title("Viz Makeover")
 
 def get_plot(res_df):
     res_df['day'] = pd.to_datetime(res_df['day'])
-    fig = px.scatter(data_frame=res_df, x="day", y="num_rats", render_mode="auto", color="Status", width=1600,
+    fig = px.scatter(data_frame=res_df, x="day", y="num_rats", render_mode="auto", color="Status", width=1800,
                      height=600,
                      trendline="lowess", labels={
             "day": "Date",
