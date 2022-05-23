@@ -28,7 +28,7 @@ def get_plot(res_df):
         if trace.mode is not None and trace.mode == 'lines':
             tr_line.append(k)
 
-    cols = ["#9cc0e6", "#e6a5a5", "#147828"]
+    cols = ["#075216", "#00010a", "#fcf00a"]
     for i, id in enumerate(tr_line):
         fig.data[id].update(line_width=3, line_dash="longdashdot", line_color=cols[i])
 
